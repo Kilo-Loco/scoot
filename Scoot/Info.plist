@@ -37,5 +37,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationUsageDescription</key>
+	<string>Please allow Scoot to use your location.</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Please allow Scoot to use your location.</string>
 </dict>
 </plist>

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreLocation
 
 final class SessionCoordinator {
     
@@ -34,6 +35,11 @@ final class SessionCoordinator {
                 self?.handle(result, for: scooterMapVC)
             }
         }
+        scooterMapVC.didProvideCoordinates = { [weak self, unowned scooterMapVC] in
+            self?.createScooterAlert(with: $0, in: scooterMapVC) { [unowned scooterMapVC] scooter in
+                scooterMapVC.createAnnotation(for: scooter)
+            }
+        }
         
         let scooterListVC = ScooterListViewController()
         scooterListVC.title = "List"
@@ -57,6 +63,27 @@ final class SessionCoordinator {
         case .failure(let error):
             print(error)
         }
+    }
+    
+    
+    // MARK: - Alerts
+    
+    private func createScooterAlert(with coordinate: CLLocationCoordinate2D, in viewController: UIViewController, completion: @escaping (Scooter) -> Void) {
+        
+        let alert = UIAlertController(title: "Create Scooter", message: nil, preferredStyle: .alert)
+        alert.addTextField {
+            $0.placeholder = "Enter scooter name"
+        }
+        let createAction = UIAlertAction(title: "Add", style: .default) { [unowned alert] _ in
+            guard let scooterName = alert.textFields?.first?.text else { return }
+            let coordinates = Coordinates(latitude: coordinate.latitude, longitude: coordinate.longitude)
+            let newScooter = Scooter(id: nil, name: scooterName, coordinates: coordinates)
+            completion(newScooter)
+        }
+        alert.addAction(createAction)
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        
+        viewController.present(alert, animated: true)
     }
     
 }

@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import Mortar
 
 final class ScooterMapView: UIView {
     
@@ -18,10 +19,11 @@ final class ScooterMapView: UIView {
     
     // MARK: - Subviews
     
-    lazy var mapView: MKMapView = {
+    lazy var mapView: MKMapView = { [unowned self] in
         let mapView = MKMapView()
         mapView.translatesAutoresizingMaskIntoConstraints = false
         mapView.showsUserLocation = true
+        mapView.delegate = self
         return mapView
     }()
     
@@ -51,6 +53,12 @@ final class ScooterMapView: UIView {
     private func setup() {
         addSubview(mapView)
         addSubview(addScooterButton)
+        
+        mapView |=| self
+        
+        addScooterButton.m_centerX |=| m_centerX
+        addScooterButton.m_bottom |=| m_bottomMargin - 20
+        addScooterButton.m_size |=| (60, 60)
     }
     
     
@@ -61,4 +69,22 @@ final class ScooterMapView: UIView {
         didProvideCoordinate?(mapView.centerCoordinate)
     }
     
+}
+
+extension ScooterMapView: MKMapViewDelegate {
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        guard annotation is MKPointAnnotation else { return nil }
+        
+        let identifier = "Annotation"
+        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
+        
+        if annotationView == nil {
+            annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+            annotationView!.canShowCallout = true
+        } else {
+            annotationView!.annotation = annotation
+        }
+        
+        return annotationView
+    }
 }
