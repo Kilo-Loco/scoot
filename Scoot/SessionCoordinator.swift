@@ -38,6 +38,9 @@ final class SessionCoordinator {
         scooterMapVC.didProvideCoordinates = { [weak self, unowned scooterMapVC] in
             self?.createScooterAlert(with: $0, in: scooterMapVC) { [unowned scooterMapVC] scooter in
                 scooterMapVC.createAnnotation(for: scooter)
+                self?.context.create(scooter, completion: { (result) in
+                    print(result)
+                })
             }
         }
         
@@ -48,8 +51,9 @@ final class SessionCoordinator {
                 self?.handle(result, for: scooterListVC)
             }
         }
-        
-        rootViewController.setViewControllers([scooterMapVC, scooterListVC], animated: false)
+        let scooterListNav = UINavigationController(rootViewController: scooterListVC)
+        scooterListNav.navigationBar.prefersLargeTitles = true
+        rootViewController.setViewControllers([scooterMapVC, scooterListNav], animated: false)
     }
     
     
