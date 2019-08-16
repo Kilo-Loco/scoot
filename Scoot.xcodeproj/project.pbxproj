@@ -9,19 +9,47 @@
 /* Begin PBXBuildFile section */
 		9E320FE52306ED50008E7CC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E320FE42306ED50008E7CC2 /* AppDelegate.swift */; };
 		9E320FE72306ED50008E7CC2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E320FE62306ED50008E7CC2 /* ViewController.swift */; };
-		9E320FEA2306ED50008E7CC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E320FE82306ED50008E7CC2 /* Main.storyboard */; };
 		9E320FEC2306ED52008E7CC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E320FEB2306ED52008E7CC2 /* Assets.xcassets */; };
 		9E320FEF2306ED52008E7CC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E320FED2306ED52008E7CC2 /* LaunchScreen.storyboard */; };
+		9E320FF72306ED8D008E7CC2 /* Scooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E320FF62306ED8D008E7CC2 /* Scooter.swift */; };
+		9E320FF92306EDD7008E7CC2 /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E320FF82306EDD7008E7CC2 /* Coordinates.swift */; };
+		9E320FFB2306EE55008E7CC2 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E320FFA2306EE55008E7CC2 /* AppCoordinator.swift */; };
+		9E320FFD2306F64D008E7CC2 /* ScooterMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E320FFC2306F64D008E7CC2 /* ScooterMapViewController.swift */; };
+		9E320FFF2306F668008E7CC2 /* ScooterMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E320FFE2306F668008E7CC2 /* ScooterMapView.swift */; };
+		9E3210012306FBCE008E7CC2 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3210002306FBCE008E7CC2 /* InitialViewController.swift */; };
+		9E3210032306FC6C008E7CC2 /* SessionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3210022306FC6C008E7CC2 /* SessionCoordinator.swift */; };
+		9E3210052306FD04008E7CC2 /* SessionContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3210042306FD04008E7CC2 /* SessionContext.swift */; };
+		9E3210072306FE08008E7CC2 /* ScooterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3210062306FE08008E7CC2 /* ScooterListViewController.swift */; };
+		9E3210092306FF4B008E7CC2 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3210082306FF4B008E7CC2 /* Typealiases.swift */; };
+		9E32100B2306FF95008E7CC2 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E32100A2306FF95008E7CC2 /* NetworkingService.swift */; };
+		9E32100D2307017E008E7CC2 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E32100C2307017E008E7CC2 /* Endpoint.swift */; };
+		9E32100F230701CB008E7CC2 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E32100E230701CB008E7CC2 /* HTTPMethod.swift */; };
+		9E32101123070205008E7CC2 /* ScootersEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E32101023070205008E7CC2 /* ScootersEndpoint.swift */; };
+		9E32101323070BE8008E7CC2 /* HasScooters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E32101223070BE8008E7CC2 /* HasScooters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9E320FE12306ED50008E7CC2 /* Scoot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scoot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E320FE42306ED50008E7CC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E320FE62306ED50008E7CC2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9E320FE92306ED50008E7CC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9E320FEB2306ED52008E7CC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E320FEE2306ED52008E7CC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E320FF02306ED52008E7CC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E320FF62306ED8D008E7CC2 /* Scooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scooter.swift; sourceTree = "<group>"; };
+		9E320FF82306EDD7008E7CC2 /* Coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
+		9E320FFA2306EE55008E7CC2 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		9E320FFC2306F64D008E7CC2 /* ScooterMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScooterMapViewController.swift; sourceTree = "<group>"; };
+		9E320FFE2306F668008E7CC2 /* ScooterMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScooterMapView.swift; sourceTree = "<group>"; };
+		9E3210002306FBCE008E7CC2 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		9E3210022306FC6C008E7CC2 /* SessionCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionCoordinator.swift; sourceTree = "<group>"; };
+		9E3210042306FD04008E7CC2 /* SessionContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionContext.swift; sourceTree = "<group>"; };
+		9E3210062306FE08008E7CC2 /* ScooterListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScooterListViewController.swift; sourceTree = "<group>"; };
+		9E3210082306FF4B008E7CC2 /* Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
+		9E32100A2306FF95008E7CC2 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		9E32100C2307017E008E7CC2 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		9E32100E230701CB008E7CC2 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		9E32101023070205008E7CC2 /* ScootersEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScootersEndpoint.swift; sourceTree = "<group>"; };
+		9E32101223070BE8008E7CC2 /* HasScooters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasScooters.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +84,24 @@
 			children = (
 				9E320FE42306ED50008E7CC2 /* AppDelegate.swift */,
 				9E320FE62306ED50008E7CC2 /* ViewController.swift */,
-				9E320FE82306ED50008E7CC2 /* Main.storyboard */,
 				9E320FEB2306ED52008E7CC2 /* Assets.xcassets */,
 				9E320FED2306ED52008E7CC2 /* LaunchScreen.storyboard */,
 				9E320FF02306ED52008E7CC2 /* Info.plist */,
+				9E320FF62306ED8D008E7CC2 /* Scooter.swift */,
+				9E320FF82306EDD7008E7CC2 /* Coordinates.swift */,
+				9E320FFA2306EE55008E7CC2 /* AppCoordinator.swift */,
+				9E320FFC2306F64D008E7CC2 /* ScooterMapViewController.swift */,
+				9E320FFE2306F668008E7CC2 /* ScooterMapView.swift */,
+				9E3210002306FBCE008E7CC2 /* InitialViewController.swift */,
+				9E3210022306FC6C008E7CC2 /* SessionCoordinator.swift */,
+				9E3210042306FD04008E7CC2 /* SessionContext.swift */,
+				9E3210062306FE08008E7CC2 /* ScooterListViewController.swift */,
+				9E3210082306FF4B008E7CC2 /* Typealiases.swift */,
+				9E32100A2306FF95008E7CC2 /* NetworkingService.swift */,
+				9E32100C2307017E008E7CC2 /* Endpoint.swift */,
+				9E32100E230701CB008E7CC2 /* HTTPMethod.swift */,
+				9E32101023070205008E7CC2 /* ScootersEndpoint.swift */,
+				9E32101223070BE8008E7CC2 /* HasScooters.swift */,
 			);
 			path = Scoot;
 			sourceTree = "<group>";
@@ -124,7 +166,6 @@
 			files = (
 				9E320FEF2306ED52008E7CC2 /* LaunchScreen.storyboard in Resources */,
 				9E320FEC2306ED52008E7CC2 /* Assets.xcassets in Resources */,
-				9E320FEA2306ED50008E7CC2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +176,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E32100D2307017E008E7CC2 /* Endpoint.swift in Sources */,
+				9E320FFF2306F668008E7CC2 /* ScooterMapView.swift in Sources */,
+				9E3210032306FC6C008E7CC2 /* SessionCoordinator.swift in Sources */,
 				9E320FE72306ED50008E7CC2 /* ViewController.swift in Sources */,
+				9E32101123070205008E7CC2 /* ScootersEndpoint.swift in Sources */,
+				9E320FFD2306F64D008E7CC2 /* ScooterMapViewController.swift in Sources */,
 				9E320FE52306ED50008E7CC2 /* AppDelegate.swift in Sources */,
+				9E3210072306FE08008E7CC2 /* ScooterListViewController.swift in Sources */,
+				9E320FFB2306EE55008E7CC2 /* AppCoordinator.swift in Sources */,
+				9E32100F230701CB008E7CC2 /* HTTPMethod.swift in Sources */,
+				9E3210052306FD04008E7CC2 /* SessionContext.swift in Sources */,
+				9E3210092306FF4B008E7CC2 /* Typealiases.swift in Sources */,
+				9E320FF72306ED8D008E7CC2 /* Scooter.swift in Sources */,
+				9E320FF92306EDD7008E7CC2 /* Coordinates.swift in Sources */,
+				9E32100B2306FF95008E7CC2 /* NetworkingService.swift in Sources */,
+				9E32101323070BE8008E7CC2 /* HasScooters.swift in Sources */,
+				9E3210012306FBCE008E7CC2 /* InitialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9E320FE82306ED50008E7CC2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9E320FE92306ED50008E7CC2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9E320FED2306ED52008E7CC2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
